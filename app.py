@@ -13,7 +13,7 @@ st.write("Upload a photo of a handwritten digit (0–9) and the model will predi
 # Load model — cached so it only loads once
 @st.cache_resource
 def load_model():
-    return tf.keras.models.load_model('devesh_mnist_model.keras')
+    return tf.keras.models.load_model('devesh_mnist_model.h5')
 
 model = load_model()
 
